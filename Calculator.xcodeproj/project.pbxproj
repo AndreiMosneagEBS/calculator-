@@ -13,6 +13,14 @@
 		8E0EF94A2861E692005F6E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EF9492861E692005F6E88 /* Assets.xcassets */; };
 		8E0EF94D2861E692005F6E88 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8E0EF94B2861E692005F6E88 /* LaunchScreen.storyboard */; };
 		8E0EF9702864A56C005F6E88 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E0EF96F2864A56C005F6E88 /* ViewController.swift */; };
+		8E7E42F4286C82CD0002EF37 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42F3286C82CD0002EF37 /* HistoryVC.swift */; };
+		8E7E42F8286C82F70002EF37 /* SetingsCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42F7286C82F70002EF37 /* SetingsCollectionView.swift */; };
+		8E7E42FB286C831F0002EF37 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7E42F9286C831E0002EF37 /* TableViewCell.xib */; };
+		8E7E42FC286C831F0002EF37 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42FA286C831E0002EF37 /* TableViewCell.swift */; };
+		8E7E42FE286C83570002EF37 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42FD286C83570002EF37 /* SettingsVC.swift */; };
+		8E7E4300286C83600002EF37 /* collectionSetingg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42FF286C83600002EF37 /* collectionSetingg.swift */; };
+		8E7E4304286C839E0002EF37 /* UiButon+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E4303286C839E0002EF37 /* UiButon+.swift */; };
+		8E7E430D286C84830002EF37 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E430C286C84830002EF37 /* ColorManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +32,18 @@
 		8E0EF94C2861E692005F6E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0EF94E2861E692005F6E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8E0EF96F2864A56C005F6E88 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Desktop/Calculator/ViewController/ViewController.swift; sourceTree = "<group>"; };
+		8E7E42F3286C82CD0002EF37 /* HistoryVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = HistoryVC.swift; path = ../../Desktop/Calculator/ViewController/HistoryVC.swift; sourceTree = "<group>"; };
+		8E7E42F7286C82F70002EF37 /* SetingsCollectionView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SetingsCollectionView.swift; path = ../../Desktop/Calculator/ViewController/SetingsCollectionView.swift; sourceTree = "<group>"; };
+		8E7E42F9286C831E0002EF37 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../../Desktop/Calculator/Cell/TableViewCell.xib; sourceTree = "<group>"; };
+		8E7E42FA286C831E0002EF37 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../../Desktop/Calculator/Cell/TableViewCell.swift; sourceTree = "<group>"; };
+		8E7E42FD286C83570002EF37 /* SettingsVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = ../../Desktop/Calculator/ViewController/SettingsVC.swift; sourceTree = "<group>"; };
+		8E7E42FF286C83600002EF37 /* collectionSetingg.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = collectionSetingg.swift; path = ../../Desktop/Calculator/ViewController/collectionSetingg.swift; sourceTree = "<group>"; };
+		8E7E4303286C839E0002EF37 /* UiButon+.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = "UiButon+.swift"; path = "../../Desktop/Calculator/Extension/UiButon+.swift"; sourceTree = "<group>"; };
+		8E7E4308286C842E0002EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E7E430B286C84490002EF37 /* collectionSetingg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = collectionSetingg.swift; sourceTree = "<group>"; };
+		8E7E430C286C84830002EF37 /* ColorManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorManager.swift; path = ../../Desktop/Calculator/ViewController/ColorManager.swift; sourceTree = "<group>"; };
+		8E7E4310286C84AC0002EF37 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		8E7E4311286C84C00002EF37 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +60,10 @@
 		8E0EF9342861E691005F6E88 = {
 			isa = PBXGroup;
 			children = (
+				8E7E4309286C84370002EF37 /* Models */,
+				8E7E4307286C840C0002EF37 /* Cell */,
+				8E7E4306286C83F90002EF37 /* ViewControler */,
+				8E7E4305286C83EE0002EF37 /* Extension */,
 				8E0EF93F2861E691005F6E88 /* Calculator */,
 				8E0EF93E2861E691005F6E88 /* Products */,
 			);
@@ -56,15 +80,57 @@
 		8E0EF93F2861E691005F6E88 /* Calculator */ = {
 			isa = PBXGroup;
 			children = (
-				8E0EF9402861E691005F6E88 /* AppDelegate.swift */,
+				8E7E4303286C839E0002EF37 /* UiButon+.swift */,
 				8E0EF9422861E691005F6E88 /* SceneDelegate.swift */,
+				8E7E430C286C84830002EF37 /* ColorManager.swift */,
 				8E0EF96F2864A56C005F6E88 /* ViewController.swift */,
+				8E7E42FF286C83600002EF37 /* collectionSetingg.swift */,
+				8E7E42FD286C83570002EF37 /* SettingsVC.swift */,
+				8E7E42F3286C82CD0002EF37 /* HistoryVC.swift */,
+				8E7E42F7286C82F70002EF37 /* SetingsCollectionView.swift */,
+				8E7E42FA286C831E0002EF37 /* TableViewCell.swift */,
+				8E7E42F9286C831E0002EF37 /* TableViewCell.xib */,
 				8E0EF9462861E691005F6E88 /* Main.storyboard */,
 				8E0EF9492861E692005F6E88 /* Assets.xcassets */,
 				8E0EF94B2861E692005F6E88 /* LaunchScreen.storyboard */,
 				8E0EF94E2861E692005F6E88 /* Info.plist */,
+				8E0EF9402861E691005F6E88 /* AppDelegate.swift */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		8E7E4305286C83EE0002EF37 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Extension;
+			path = Calculator/Extension;
+			sourceTree = "<group>";
+		};
+		8E7E4306286C83F90002EF37 /* ViewControler */ = {
+			isa = PBXGroup;
+			children = (
+				8E7E4308286C842E0002EF37 /* ViewController.swift */,
+				8E7E4310286C84AC0002EF37 /* SettingsVC.swift */,
+				8E7E4311286C84C00002EF37 /* HistoryVC.swift */,
+			);
+			path = ViewControler;
+			sourceTree = "<group>";
+		};
+		8E7E4307286C840C0002EF37 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Cell;
+			path = ViewControler/Cell;
+			sourceTree = "<group>";
+		};
+		8E7E4309286C84370002EF37 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8E7E430B286C84490002EF37 /* collectionSetingg.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +192,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0EF94D2861E692005F6E88 /* LaunchScreen.storyboard in Resources */,
+				8E7E42FB286C831F0002EF37 /* TableViewCell.xib in Resources */,
 				8E0EF94A2861E692005F6E88 /* Assets.xcassets in Resources */,
 				8E0EF9482861E691005F6E88 /* Main.storyboard in Resources */,
 			);
@@ -139,8 +206,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8E0EF9412861E691005F6E88 /* AppDelegate.swift in Sources */,
+				8E7E430D286C84830002EF37 /* ColorManager.swift in Sources */,
+				8E7E42F8286C82F70002EF37 /* SetingsCollectionView.swift in Sources */,
+				8E7E42F4286C82CD0002EF37 /* HistoryVC.swift in Sources */,
+				8E7E42FC286C831F0002EF37 /* TableViewCell.swift in Sources */,
 				8E0EF9702864A56C005F6E88 /* ViewController.swift in Sources */,
 				8E0EF9432861E691005F6E88 /* SceneDelegate.swift in Sources */,
+				8E7E4304286C839E0002EF37 /* UiButon+.swift in Sources */,
+				8E7E42FE286C83570002EF37 /* SettingsVC.swift in Sources */,
+				8E7E4300286C83600002EF37 /* collectionSetingg.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

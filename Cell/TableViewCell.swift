@@ -8,16 +8,35 @@
 import UIKit
 
 class TableViewCell: UITableViewCell {
-
+    
+    static let identifier = "TableViewCell"
+    
+    @IBOutlet private weak var numbersCalculate: UILabel!
+    @IBOutlet private weak var resultat: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-    }
-
-    override func setSelected(_ selected: Bool, animated: Bool) {
-        super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
+//        resetView()
     }
     
+    override func prepareForReuse() {
+        super.prepareForReuse()
+        selectionStyle = .none
+//        resetView()
+    }
+    
+//    private func resetView() {
+//        numbersCalculate.text = nil
+//        resultat.text = nil
+//    }
+    
+    struct Params {
+        var numbers: String
+        var results: String
+    }
+    
+    func setup(param: Params) {
+        numbersCalculate.text = param.numbers
+        resultat.text = param.results
+    }
 }
