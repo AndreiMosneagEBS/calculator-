@@ -15,10 +15,10 @@
 		8E7E43AE286D9D0F0002EF37 /* ColorUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43AD286D9D0F0002EF37 /* ColorUser.swift */; };
 		8E7E43B0286D9DAE0002EF37 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E430B286C84490002EF37 /* CustomSegmentControl.swift */; };
 		8E7E43B1286D9DED0002EF37 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43AF286D9D8D0002EF37 /* UIButton.swift */; };
-		8E7E43B3286D9E020002EF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43B2286D9DFB0002EF37 /* ViewController.swift */; };
-		8E7E43B7286D9E3E0002EF37 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43B6286D9E3E0002EF37 /* HistoryVC.swift */; };
 		8E7E43BD286D9EF80002EF37 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42FA286C831E0002EF37 /* TableViewCell.swift */; };
-		8E7E43BE286D9F480002EF37 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43B4286D9E0F0002EF37 /* SettingsVC.swift */; };
+		8E7E43C0286DA2E60002EF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43BF286DA2E60002EF37 /* ViewController.swift */; };
+		8E7E43C2286DA2F40002EF37 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43C1286DA2F40002EF37 /* SettingsVC.swift */; };
+		8E7E43C4286DA2F70002EF37 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43C3286DA2F60002EF37 /* HistoryVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,14 +28,14 @@
 		8E0EF9492861E692005F6E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8E0EF94C2861E692005F6E88 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8E0EF94E2861E692005F6E88 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		8E7E42F9286C831E0002EF37 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../../Desktop/Calculator/Cell/TableViewCell.xib; sourceTree = "<group>"; };
-		8E7E42FA286C831E0002EF37 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../../Desktop/Calculator/Cell/TableViewCell.swift; sourceTree = "<group>"; };
+		8E7E42F9286C831E0002EF37 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = TableViewCell.xib; path = ../Cell/TableViewCell.xib; sourceTree = "<group>"; };
+		8E7E42FA286C831E0002EF37 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../Cell/TableViewCell.swift; sourceTree = "<group>"; };
 		8E7E430B286C84490002EF37 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
-		8E7E43AD286D9D0F0002EF37 /* ColorUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ColorUser.swift; path = ../../Desktop/Calculator/ViewController/ColorUser.swift; sourceTree = "<group>"; };
+		8E7E43AD286D9D0F0002EF37 /* ColorUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUser.swift; sourceTree = "<group>"; };
 		8E7E43AF286D9D8D0002EF37 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
-		8E7E43B2286D9DFB0002EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = ../../Desktop/Calculator/ViewController/ViewController.swift; sourceTree = "<group>"; };
-		8E7E43B4286D9E0F0002EF37 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SettingsVC.swift; path = ../../Desktop/Calculator/ViewController/SettingsVC.swift; sourceTree = "<group>"; };
-		8E7E43B6286D9E3E0002EF37 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HistoryVC.swift; path = ../../Desktop/Calculator/ViewController/HistoryVC.swift; sourceTree = "<group>"; };
+		8E7E43BF286DA2E60002EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8E7E43C1286DA2F40002EF37 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
+		8E7E43C3286DA2F60002EF37 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,9 +94,9 @@
 		8E7E4306286C83F90002EF37 /* ViewControler */ = {
 			isa = PBXGroup;
 			children = (
-				8E7E43B2286D9DFB0002EF37 /* ViewController.swift */,
-				8E7E43B4286D9E0F0002EF37 /* SettingsVC.swift */,
-				8E7E43B6286D9E3E0002EF37 /* HistoryVC.swift */,
+				8E7E43C3286DA2F60002EF37 /* HistoryVC.swift */,
+				8E7E43C1286DA2F40002EF37 /* SettingsVC.swift */,
+				8E7E43BF286DA2E60002EF37 /* ViewController.swift */,
 			);
 			path = ViewControler;
 			sourceTree = "<group>";
@@ -182,14 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8E7E43B7286D9E3E0002EF37 /* HistoryVC.swift in Sources */,
-				8E7E43B3286D9E020002EF37 /* ViewController.swift in Sources */,
 				8E0EF9412861E691005F6E88 /* AppDelegate.swift in Sources */,
+				8E7E43C0286DA2E60002EF37 /* ViewController.swift in Sources */,
 				8E7E43BD286D9EF80002EF37 /* TableViewCell.swift in Sources */,
 				8E7E43AE286D9D0F0002EF37 /* ColorUser.swift in Sources */,
 				8E7E43B0286D9DAE0002EF37 /* CustomSegmentControl.swift in Sources */,
 				8E7E43B1286D9DED0002EF37 /* UIButton.swift in Sources */,
-				8E7E43BE286D9F480002EF37 /* SettingsVC.swift in Sources */,
+				8E7E43C4286DA2F70002EF37 /* HistoryVC.swift in Sources */,
+				8E7E43C2286DA2F40002EF37 /* SettingsVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
