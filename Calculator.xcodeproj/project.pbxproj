@@ -14,11 +14,12 @@
 		8E7E42FB286C831F0002EF37 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8E7E42F9286C831E0002EF37 /* TableViewCell.xib */; };
 		8E7E43AE286D9D0F0002EF37 /* ColorUser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43AD286D9D0F0002EF37 /* ColorUser.swift */; };
 		8E7E43B0286D9DAE0002EF37 /* CustomSegmentControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E430B286C84490002EF37 /* CustomSegmentControl.swift */; };
-		8E7E43B1286D9DED0002EF37 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43AF286D9D8D0002EF37 /* UIButton.swift */; };
 		8E7E43BD286D9EF80002EF37 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E42FA286C831E0002EF37 /* TableViewCell.swift */; };
 		8E7E43C0286DA2E60002EF37 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43BF286DA2E60002EF37 /* ViewController.swift */; };
 		8E7E43C2286DA2F40002EF37 /* SettingsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43C1286DA2F40002EF37 /* SettingsVC.swift */; };
 		8E7E43C4286DA2F70002EF37 /* HistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43C3286DA2F60002EF37 /* HistoryVC.swift */; };
+		8E7E43C6286DA6800002EF37 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43C5286DA6800002EF37 /* UIButton.swift */; };
+		8E7E43CA286DA88D0002EF37 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E7E43C9286DA88D0002EF37 /* SceneDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,8 @@
 		8E7E43BF286DA2E60002EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E7E43C1286DA2F40002EF37 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		8E7E43C3286DA2F60002EF37 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
+		8E7E43C5286DA6800002EF37 /* UIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UIButton.swift; path = ../../../../Desktop/Calculator/Extension/UIButton.swift; sourceTree = "<group>"; };
+		8E7E43C9286DA88D0002EF37 /* SceneDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SceneDelegate.swift; path = "../../../Desktop/calculator-/Calculator/SceneDelegate.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +80,7 @@
 				8E0EF9492861E692005F6E88 /* Assets.xcassets */,
 				8E0EF94B2861E692005F6E88 /* LaunchScreen.storyboard */,
 				8E0EF94E2861E692005F6E88 /* Info.plist */,
+				8E7E43C9286DA88D0002EF37 /* SceneDelegate.swift */,
 				8E0EF9402861E691005F6E88 /* AppDelegate.swift */,
 			);
 			path = Calculator;
@@ -85,6 +89,7 @@
 		8E7E4305286C83EE0002EF37 /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				8E7E43C5286DA6800002EF37 /* UIButton.swift */,
 				8E7E43AF286D9D8D0002EF37 /* UIButton.swift */,
 			);
 			name = Extension;
@@ -184,12 +189,13 @@
 			files = (
 				8E0EF9412861E691005F6E88 /* AppDelegate.swift in Sources */,
 				8E7E43C0286DA2E60002EF37 /* ViewController.swift in Sources */,
+				8E7E43CA286DA88D0002EF37 /* SceneDelegate.swift in Sources */,
 				8E7E43BD286D9EF80002EF37 /* TableViewCell.swift in Sources */,
 				8E7E43AE286D9D0F0002EF37 /* ColorUser.swift in Sources */,
 				8E7E43B0286D9DAE0002EF37 /* CustomSegmentControl.swift in Sources */,
-				8E7E43B1286D9DED0002EF37 /* UIButton.swift in Sources */,
 				8E7E43C4286DA2F70002EF37 /* HistoryVC.swift in Sources */,
 				8E7E43C2286DA2F40002EF37 /* SettingsVC.swift in Sources */,
+				8E7E43C6286DA6800002EF37 /* UIButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

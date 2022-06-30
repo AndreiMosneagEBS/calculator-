@@ -24,11 +24,13 @@
                                 <items>
                                     <navigationItem title="Calculator" id="sKf-0Z-b2c">
                                         <barButtonItem key="leftBarButtonItem" image="settings" id="t6r-Pl-uro">
+                                            <color key="tintColor" red="0.1450980392" green="0.17254901959999999" blue="0.1960784314" alpha="0.8980392157" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="settingButtonAction:" destination="BYZ-38-t0r" id="fxN-kl-kHW"/>
                                             </connections>
                                         </barButtonItem>
                                         <barButtonItem key="rightBarButtonItem" image="history" id="j4t-bX-W4K">
+                                            <color key="tintColor" red="0.1450980392" green="0.17254901959999999" blue="0.1960784314" alpha="0.8980392157" colorSpace="calibratedRGB"/>
                                             <connections>
                                                 <action selector="historyButton:" destination="BYZ-38-t0r" id="CsE-Ye-yXk"/>
                                             </connections>
