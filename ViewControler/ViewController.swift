@@ -21,23 +21,24 @@ class ViewController: UIViewController {
     @IBOutlet weak var minusOutlet: UIButton!
     @IBOutlet weak var plusOutlet: UIButton!
     @IBOutlet weak var equalOutlet: UIButton!
+    @IBOutlet weak var minusNumber: UIButton!
+    
     
     var workings:String = ""
+    let characters = ["*", "/", "+", "-"]
     var calculateHistory: [String] = []
     var resultatHistory: [String] = []
+    var calculateResult: [[String:String]] = []
+    var dict: [String:String ]?
+    var arithmeticValue: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-       
-
         clearAll()
         equalsButtonSetings()
     }
     
-    
-    
-    func clearAll() {
+    private func clearAll() {
         workings = ""
         guard let calculatorWorkings = calculatorWorkings else {
             return
@@ -46,7 +47,7 @@ class ViewController: UIViewController {
         calculatorResults.text = ""
     }
     
-    func equalsButtonSetings() {
+   private func equalsButtonSetings() {
         guard let equalSetings = equalOutlet else {
             return
         }
@@ -55,103 +56,67 @@ class ViewController: UIViewController {
     
      
     @IBAction func equalsTap(_ sender: Any){
-        if(validInput()) {
-            let checkedWorkingsForPercent = workings.replacingOccurrences(of: "% f", with: "*0.01")
+        // Modificat
+//        print(arithmeticValue)
+        
+        
+        if validInput()  {
+            let checkedWorkingsForPercent = workings.replacingOccurrences(of: "%", with: "*0.01")
+            print(checkedWorkingsForPercent)
             let expression = NSExpression(format: checkedWorkingsForPercent)
+            print(expression)
             let result = expression.expressionValue(with: nil, context: nil) as! Double
+            print(result)
             let resultString = formatResult(result: result)
             calculatorWorkings.text = workings
-            calculateHistory.append(workings)
-            UserDefaults.standard.set(calculateHistory, forKey: "calculate")
-            
             calculatorResults.text = resultString
-            resultatHistory.append(resultString)
-            UserDefaults.standard.set(resultatHistory, forKey: "results")
-            
-            
-
-            
+            calculateResult.append(["workings": workings, "result": resultString])
+            UserDefaults.standard.set(calculateResult, forKey: "calculateResult")
             
         } else {
-            let alert = UIAlertController(
-                title: "Invalid Input",
-                message: "Calculator unable to do math based on input",
-                preferredStyle: .alert)
-            alert.addAction(UIAlertAction(title: "Okay", style: .default))
-            self.present(alert, animated: true, completion: nil)
+            invalidInput()
         }
     }
     
-   
-    
-    func validInput() -> Bool {
-        var count = 0
-        var funcCharIndexes = [Int]()
-        
-        for char in workings
-        {
-            if(specialCharacter(char: char))
-            {
-                funcCharIndexes.append(count)
-            }
-            count += 1
-        }
-        
-        var previous: Int = -1
-        
-        for index in funcCharIndexes
-        {
-            if(index == 0)
-            {
-                return false
-            }
-            
-            if(index == workings.count - 1)
-            {
-                return false
-            }
-            
-            if (previous != -1)
-            {
-                if(index - previous == 1)
-                {
-                    return false
-                }
-            }
-            previous = index
-        }
-        
-        return true
+    private func invalidInput() {
+        let alert = UIAlertController(
+            title: "Invalid Input",
+            message: "Calculator unable to do math based on input",
+            preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Okay", style: .default))
+        self.present(alert, animated: true, completion: nil)
     }
     
-    func specialCharacter (char: Character) -> Bool
-    {
-        if(char == "*")
-        {
+    
+    private func validInput() ->Bool { // Modificat
+        print(workings.prefix(1))
+        if characters.contains(String(workings.suffix(1))) ||
+            characters.contains(String(workings.prefix(1))) {
+            return false
+        }else {
             return true
         }
-        if(char == "/")
-        {
-            return true
-        }
-        if(char == "+")
-        {
-            return true
-        }
-        return false
     }
     
-    func formatResult(result: Double) -> String
-    {
-        if(result.truncatingRemainder(dividingBy: 1) == 0)
-        {
-            return String(format: "%.0f", result)
-        }
-        else
-        {
-            return String(format: "%.2f", result)
+   private  func specialCharacter (char: Character) -> Bool {    // Modificat
+        if characters.contains(String(char)) {
+            return true
+        }else {
+            return false
         }
     }
+    
+   private  func formatResult(result: Double) -> String
+        {
+            if(result.truncatingRemainder(dividingBy: 1) == 0)
+            {
+                return String(format: "%.0f", result)
+            }
+            else
+            {
+                return String(format: "%.2f", result)
+            }
+        }
     
     @IBAction func allClearTap(_ sender: Any)
     {
@@ -167,11 +132,40 @@ class ViewController: UIViewController {
         }
     }
     
-    func addToWorkings(value: String)
-    {
+   private func lastCharacter(_ value: String? = nil) -> Bool {
+        
+        let lastCharacter = workings.suffix(1)
+        let stringLastCharacter = String(lastCharacter)
+        if characters.contains(value ?? "") && characters.contains(stringLastCharacter) {
+             return true
+        } else {
+            return false
+        }
+    }
+    
+    
+    
+   private func addToWorkings(value: String) {  // Modificat
+        self.arithmeticValue = value
+        if lastCharacter(value) {
+            workings.removeLast()
+        }
         workings = workings + value
         calculatorResults.text = workings
+        
     }
+    
+   private func minusChange() {
+        if workings.prefix(1) == "-" {
+            workings.removeFirst()
+            calculatorResults.text = workings
+        } else {
+            workings = "-\(workings)"
+            calculatorResults.text = workings
+        }
+    }
+    
+    
     
     @IBAction func percentTap(_ sender: Any)
     {
@@ -252,6 +246,13 @@ class ViewController: UIViewController {
     {
         addToWorkings(value: "9")
     }
+    
+    @IBAction func minusNumber(_ sender: UIButton) {
+        minusChange()
+    }
+    
+    
+    
     @IBAction func historyButton(_ sender: Any) {
         if let viewController = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HistoryVC") as? HistoryVC {
             present(viewController, animated: true)

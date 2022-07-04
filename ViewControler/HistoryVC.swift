@@ -12,6 +12,13 @@ class HistoryVC: UIViewController {
     let historyCalculate = UserDefaults.standard.object(forKey: "calculate") as? [String]
     let historyResults = UserDefaults.standard.object(forKey: "results") as? [String]
     
+    struct History {
+        let workings: String
+        let result: String
+    }
+    
+    var dataSource: [History] = []
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -20,6 +27,20 @@ class HistoryVC: UIViewController {
         tableView.dataSource = self
         tableView.register(UINib(nibName: "TableViewCell", bundle: nil), forCellReuseIdentifier: TableViewCell.identifier)
         
+        
+        if let historyCalculateResults = UserDefaults.standard.object(forKey: "calculateResult") as? [[String : String]] {
+            
+            
+            for dictionary in historyCalculateResults {
+                let history = History(workings: dictionary["workings"] ?? "",
+                                      result: dictionary["result"] ?? "")
+                dataSource.append(history)
+                dataSource.sorted(by: {$0.workings < $1.workings})
+            }
+        }
+        
+        tableView.reloadData()
+        
     }
 }
 extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
@@ -27,15 +48,16 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return historyResults?.count ?? 1
+        return dataSource.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: TableViewCell.identifier, for: indexPath) as! TableViewCell
-        if let history = historyCalculate?[indexPath.row], let results = historyResults?[indexPath.row] {
-            let params: TableViewCell.Params = .init(numbers: history  , results: results)
-            cell.setup(param: params)
-        }
+        let sortedData = dataSource.sorted(by: {$0.workings > $1.result})
+        let history = sortedData[indexPath.row]
+        let params: TableViewCell.Params = .init(numbers: history.workings, results: history.result)
+     cell.setup(param: params)
+       
         return cell
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -46,3 +68,5 @@ extension HistoryVC: UITableViewDelegate, UITableViewDataSource {
         tableView.deselectRow(at: indexPath, animated: true)
     }
 }
+
+

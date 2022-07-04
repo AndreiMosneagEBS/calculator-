@@ -31,8 +31,8 @@ class TableViewCell: UITableViewCell {
 //    }
     
     struct Params {
-        var numbers: String
-        var results: String
+        var numbers: String?
+        var results: String?
     }
     
     func setup(param: Params) {

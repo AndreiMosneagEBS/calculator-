@@ -33,7 +33,6 @@
 		8E7E42FA286C831E0002EF37 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = TableViewCell.swift; path = ../Cell/TableViewCell.swift; sourceTree = "<group>"; };
 		8E7E430B286C84490002EF37 /* CustomSegmentControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentControl.swift; sourceTree = "<group>"; };
 		8E7E43AD286D9D0F0002EF37 /* ColorUser.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorUser.swift; sourceTree = "<group>"; };
-		8E7E43AF286D9D8D0002EF37 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
 		8E7E43BF286DA2E60002EF37 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8E7E43C1286DA2F40002EF37 /* SettingsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsVC.swift; sourceTree = "<group>"; };
 		8E7E43C3286DA2F60002EF37 /* HistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryVC.swift; sourceTree = "<group>"; };
@@ -90,7 +89,6 @@
 			isa = PBXGroup;
 			children = (
 				8E7E43C5286DA6800002EF37 /* UIButton.swift */,
-				8E7E43AF286D9D8D0002EF37 /* UIButton.swift */,
 			);
 			name = Extension;
 			path = Calculator/Extension;
